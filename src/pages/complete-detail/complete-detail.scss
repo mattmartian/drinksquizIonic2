@@ -1,0 +1,86 @@
+page-complete-detail {
+
+  .list-ios > .item-block:first-child{
+    border-color: map-get($colors, btnPrimary);
+  }
+
+  .list-ios .item-block .item-inner {
+    border-color: map-get($colors, btnPrimary);
+  }
+  .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-color: map-get($colors, btnPrimary);
+  }
+  .label-ios{
+    margin: 18px 8px 18px 0;
+    color: map-get($colors, btnPrimary);
+    font-weight: bold;
+  }
+  .note-ios{
+    color: map-get($colors, btnPrimary);
+  }
+  .item-ios{
+    background: transparent;
+  }
+  .home-menu {
+    width: 40%;
+    margin: 5px auto;
+    color: map-get($colors, btnPrimary);
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-box-shadow: 0 8px 0 map-get($colors, btnPrimary), 0 8px 20px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 8px 0 map-get($colors, btnPrimary), 0 8px 20px rgba(0, 0, 0, .35);
+    box-shadow: 0 8px 0 map-get($colors, btnPrimary), 0 8px 20px rgba(0, 0, 0, .35);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    //border: 6px solid rgb(82, 35, 152); /* Old browsers */
+    background: map-get($colors, btnBackground);
+  }
+  .home-menu.activated {
+    background: map-get($colors, btnBackground);
+    -webkit-box-shadow: 0 4px 0 map-get($colors, btnPrimary), 0 6px 12px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 0 map-get($colors, btnPrimary), 0 6px 12px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 0 map-get($colors, btnPrimary), 0 6px 12px rgba(0, 0, 0, .3);
+    -webkit-transform: translate(0, 4px);
+    -moz-transform: translate(0, 4px);
+    -o-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+  }
+
+  h2 {
+    font-family: myr;
+    font-size: 2em;
+    font-weight: bold;
+    color: map-get($colors, btnPrimary);
+    text-shadow:
+      -2px -2px 0 map-get($colors, btnBackground),
+      2px -2px 0 map-get($colors, btnBackground),
+      -2px 2px 0 map-get($colors, btnBackground),
+      2px 2px 0 map-get($colors, btnBackground);
+  }
+  .list.list-ios{
+    margin-bottom: 5px
+  }
+  .logo{
+    height:180px;
+  }
+  .logo2{
+    width:180px;
+  }
+  .logo3{
+    height: 100px;
+  }
+  #roots-logo-container {
+    text-align: left;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+  }
+
+  #m4-logo-container {
+    text-align: right;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+  }
+}

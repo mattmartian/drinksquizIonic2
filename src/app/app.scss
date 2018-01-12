@@ -1,0 +1,80 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+@font-face {
+  font-family: myr;
+  src:url(../assets/fonts/myraid.ttf);
+}
+
+.center-align {
+  text-align: center;
+}
+
+.page-title {
+  font-family: myr;
+  font-size: 19vw;
+  font-weight: bold;
+  color: map-get($colors, btnPrimary);
+  text-shadow:
+    -3px -3px 0 map-get($colors, btnBackground),
+    3px -3px 0 map-get($colors, btnBackground),
+    -3px 3px 0 map-get($colors, btnBackground),
+    3px 3px 0 map-get($colors, btnBackground);
+}
+.alert-ios {
+
+  .alert-wrapper {
+  background-color: map-get($colors, btnBackground);
+  color: map-get($colors, btnPrimary);
+  border: 3px map-get($colors, btnPrimary) solid;
+  border-radius: 6px;
+  width:50%;
+  }
+
+  .alert-title {
+      font-size: 26px;
+  }
+
+  .alert-message {
+      font-size: 16px;
+  }
+
+  .alert-button {
+    border-color: map-get($colors, btnPrimary);
+    border-width: 2px;
+    color: map-get($colors, btnPrimary);
+  }
+  .alert-button.activated {
+    background-color: #e5ae0f;
+  }
+}
+
+.bar-button-default-ios {
+  color: map-get($colors, btnPrimary);
+}
+
+.header-ios .toolbar-background-ios {
+  background: map-get($colors, pageBackground);
+  border-bottom: 0;
+}
+
+.toolbar-title-ios{
+  color:map-get($colors, btnPrimary);
+}
+
+.scroll-content{
+  background-color: map-get($colors, pageBackground);
+}

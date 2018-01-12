@@ -1,0 +1,67 @@
+page-home {
+  .home-menu {
+    width: 40%;
+    margin: 10% 30%;
+    color: map-get($colors, btnPrimary);
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-box-shadow: 0 8px 0 map-get($colors, btnPrimary), 0 8px 20px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 8px 0 map-get($colors, btnPrimary), 0 8px 20px rgba(0, 0, 0, .35);
+    box-shadow: 0 8px 0 map-get($colors, btnPrimary), 0 8px 20px rgba(0, 0, 0, .35);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    //border: 6px solid rgb(82, 35, 152); /* Old browsers */
+    background: map-get($colors, btnBackground);
+  }
+  .home-menu.activated {
+    background: map-get($colors, btnBackground);
+    -webkit-box-shadow: 0 4px 0 map-get($colors, btnPrimary), 0 6px 12px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 0 map-get($colors, btnPrimary), 0 6px 12px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 0 map-get($colors, btnPrimary), 0 6px 12px rgba(0, 0, 0, .3);
+    -webkit-transform: translate(0, 4px);
+    -moz-transform: translate(0, 4px);
+    -o-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+  }
+  .abs-left-corner{
+    position: absolute;
+    right:10px;
+    bottom:10px;
+    width: 25%;
+  }
+  .abs-bottom-left{
+    position: absolute;
+    left: 70px;
+    width: 40%;
+    bottom: 100px;
+  }
+  h2 {
+    font-family: myr;
+    font-size: 4em;
+    font-weight: bold;
+    color: map-get($colors, btnPrimary);
+    text-shadow:
+      -2px -2px 0 map-get($colors, btnBackground),
+      2px -2px 0 map-get($colors, btnBackground),
+      -2px 2px 0 map-get($colors, btnBackground),
+      2px 2px 0 map-get($colors, btnBackground);
+  }
+  #apple{
+    position: absolute;
+    top: 265px;
+    right: 225px;
+    width: 50px;
+  }
+  #girl{
+    position: absolute;
+    right: 50px;
+    bottom: 170px;
+    width: 25%;
+  }
+  #visitor-count {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+  }
+}
